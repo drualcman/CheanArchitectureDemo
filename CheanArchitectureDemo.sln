@@ -11,15 +11,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interface Adapters", "3.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.  Framworks And Drivers", "4.  Framworks And Drivers", "{8C576F45-0EAE-491F-A399-A2A3BB7101EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.BusinessObjects", "NorthWind.Sales.BusinessObjects\NorthWind.Sales.BusinessObjects.csproj", "{551C8616-CF77-4170-8302-D06E69D26BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Sales.BusinessObjects", "NorthWind.Sales.BusinessObjects\NorthWind.Sales.BusinessObjects.csproj", "{551C8616-CF77-4170-8302-D06E69D26BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.Controllers", "NorthWind.Sales.Controllers\NorthWind.Sales.Controllers.csproj", "{144D9921-1205-48A3-84DC-B8D8FF91CB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Sales.Controllers", "NorthWind.Sales.Controllers\NorthWind.Sales.Controllers.csproj", "{144D9921-1205-48A3-84DC-B8D8FF91CB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.Controllers.Test", "NorthWind.Sales.Controllers.Test\NorthWind.Sales.Controllers.Test.csproj", "{E2A995B2-F82D-495D-ADD6-631FBEF9EA14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Sales.Controllers.Test", "NorthWind.Sales.Controllers.Test\NorthWind.Sales.Controllers.Test.csproj", "{E2A995B2-F82D-495D-ADD6-631FBEF9EA14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ADF5D5FE-8529-401A-B3AD-CB8ED2091AE6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interface Adapters", "3. Interface Adapters", "{3265928B-5429-45CF-A28F-834BA7365949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{8793A463-B15C-404D-8647-EC7105D709E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.UseCases", "NorthWind.Sales.UseCases\NorthWind.Sales.UseCases.csproj", "{E867A620-04B1-4D59-A248-A15741B80EB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{6F113A3D-8605-416F-9E76-BC593FC72313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{F72D0409-AD71-4127-BC8C-B9CD5C2B9093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.EFCore.Repositories", "NorthWind.EFCore.Repositories\NorthWind.EFCore.Repositories.csproj", "{D9C54F6A-4B07-483C-8A9C-E84271320D60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{2544669F-F5C4-478E-91B4-B14155577ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,15 +51,33 @@ Global
 		{E2A995B2-F82D-495D-ADD6-631FBEF9EA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2A995B2-F82D-495D-ADD6-631FBEF9EA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2A995B2-F82D-495D-ADD6-631FBEF9EA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8793A463-B15C-404D-8647-EC7105D709E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8793A463-B15C-404D-8647-EC7105D709E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8793A463-B15C-404D-8647-EC7105D709E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8793A463-B15C-404D-8647-EC7105D709E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E867A620-04B1-4D59-A248-A15741B80EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E867A620-04B1-4D59-A248-A15741B80EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E867A620-04B1-4D59-A248-A15741B80EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E867A620-04B1-4D59-A248-A15741B80EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C54F6A-4B07-483C-8A9C-E84271320D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C54F6A-4B07-483C-8A9C-E84271320D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C54F6A-4B07-483C-8A9C-E84271320D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C54F6A-4B07-483C-8A9C-E84271320D60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{551C8616-CF77-4170-8302-D06E69D26BD2} = {7AB00ADD-D572-430E-A245-772FB78F3E78}
-		{144D9921-1205-48A3-84DC-B8D8FF91CB03} = {62B797F3-7471-4A2F-9ABF-F04C2E9E2CCA}
+		{144D9921-1205-48A3-84DC-B8D8FF91CB03} = {2544669F-F5C4-478E-91B4-B14155577ECB}
 		{E2A995B2-F82D-495D-ADD6-631FBEF9EA14} = {3265928B-5429-45CF-A28F-834BA7365949}
 		{3265928B-5429-45CF-A28F-834BA7365949} = {ADF5D5FE-8529-401A-B3AD-CB8ED2091AE6}
+		{8793A463-B15C-404D-8647-EC7105D709E3} = {DCEF27EC-5818-4AFE-A2F9-5AEC41B90301}
+		{E867A620-04B1-4D59-A248-A15741B80EB6} = {7AB00ADD-D572-430E-A245-772FB78F3E78}
+		{6F113A3D-8605-416F-9E76-BC593FC72313} = {62B797F3-7471-4A2F-9ABF-F04C2E9E2CCA}
+		{F72D0409-AD71-4127-BC8C-B9CD5C2B9093} = {6F113A3D-8605-416F-9E76-BC593FC72313}
+		{D9C54F6A-4B07-483C-8A9C-E84271320D60} = {F72D0409-AD71-4127-BC8C-B9CD5C2B9093}
+		{2544669F-F5C4-478E-91B4-B14155577ECB} = {62B797F3-7471-4A2F-9ABF-F04C2E9E2CCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D768F962-2FE8-4B9B-AB86-80B258BAE178}
