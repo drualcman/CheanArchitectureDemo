@@ -1,6 +1,6 @@
 ﻿namespace NorthWind.Sales.BusinessObjects.Interfaces.Presenters;
 
-public interface ICreateOrderPresenter : ICreateOrderInputPort
+public interface ICreateOrderPresenter : ICreateOrderOutputPort
 {
     int OrderId { get; }
 }
