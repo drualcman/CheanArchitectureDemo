@@ -2,7 +2,7 @@
 
 public static class DependencyContainer
 {
-    public static IServiceCollection AddUseCasesServices(this IServiceCollection services)
+    public static IServiceCollection AddNorthWindSalesControllers(this IServiceCollection services)
     {
         services.AddScoped<ICreateOrderController, CreateOrderController>();
         return services;

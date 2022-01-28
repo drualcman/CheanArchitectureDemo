@@ -5,6 +5,12 @@ public class CreateOrderInteractor : ICreateOrderInputPort
     readonly INorthWindSalesCommandsReppository Repository;
     readonly ICreateOrderOutputPort OutputPort;
 
+    public CreateOrderInteractor(INorthWindSalesCommandsReppository repository, ICreateOrderOutputPort outputPort)
+    {
+        Repository = repository;
+        OutputPort = outputPort;
+    }
+
     public async ValueTask Handle(CreateOrderDto orderDto)
     {
         OrderAggregate orderAggregate = new OrderAggregate

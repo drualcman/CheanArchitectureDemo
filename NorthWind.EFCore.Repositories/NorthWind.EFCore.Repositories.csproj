@@ -18,4 +18,8 @@
     <ProjectReference Include="..\NorthWind.Sales.BusinessObjects\NorthWind.Sales.BusinessObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
