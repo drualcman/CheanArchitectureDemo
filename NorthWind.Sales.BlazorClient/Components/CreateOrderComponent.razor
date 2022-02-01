@@ -1,0 +1,93 @@
+﻿<EditForm Model=Order OnValidSubmit=Send>
+	<div class="form-group">
+		<label for="customerId">Id del cliente</label>
+		<InputText class="form-control" id="customerId"
+				   placeholder="Id del cliente"
+				   @bind-Value="Order.CustomerId" />
+	</div>
+
+	<div class="form-group">
+		<label for="shipAddress">Dirección</label>
+		<InputText class="form-control" id="shipAddress"
+				   placeholder="Dirección"
+				   @bind-Value="Order.ShipAddress" />
+	</div>
+
+	<div class="form-group">
+		<label for="shipCity">Ciudad</label>
+		<InputText class="form-control" id="shipCity"
+				   placeholder="Ciudad"
+				   @bind-Value="Order.ShipCity" />
+	</div>
+
+	<div class="form-group">
+		<label for="shipCountry">País</label>
+		<InputText class="form-control" id="shipCountry"
+				   placeholder="País"
+				   @bind-Value="Order.ShipCountry" />
+	</div>
+
+	<div class="form-group">
+		<label for="shipPostalCode">Código Postal</label>
+		<InputText class="form-control" id="shipPostalCode"
+				   placeholder="Código Postal"
+				   @bind-Value="Order.ShipPostalCode" />
+	</div>
+
+	<hr />
+
+	<div class="row">
+		<div class="col">
+			Id de Producto
+		</div>
+		<div class="col">
+			Precio
+		</div>
+		<div class="col">
+			Cantidad
+		</div>
+	</div>
+
+	@foreach (CreateOrderDetailDto Item in Order.OrderDetails)
+	{
+		<div class="row">
+			<div class="col">
+				<InputNumber class="form-control"
+						 placeholder="Id de Producto"
+						 @bind-Value="Item.ProductId" />
+			</div>
+
+			<div class="col">
+				<InputNumber class="form-control"
+						 placeholder="Precio"
+						 @bind-Value="Item.UnitPrice" />
+			</div>
+
+			<div class="col">
+				<InputNumber class="form-control"
+						 placeholder="Cantidad"
+						 @bind-Value="Item.Quantity" />
+			</div>
+		</div>
+	}
+
+	<div class="row p-3">
+		<div class="col">
+			<button type="button" class="btn btn-primary"
+					@onclick=AddNewOrderDetailItem>
+				Agregar producto
+			</button>
+		</div>
+
+		<div class="col">
+			<button class="btn btn-primary">Enviar</button>
+		</div>
+	</div>
+</EditForm>
+<hr />
+@if(!string.IsNullOrWhiteSpace(Message))
+{
+	<div class="alert alert-info">
+		@Message	
+	</div>
+}

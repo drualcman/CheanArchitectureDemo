@@ -6,4 +6,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NorthWind.Sales.BusinessObjects\NorthWind.Sales.BusinessObjects.csproj" />
+  </ItemGroup>
+
 </Project>
