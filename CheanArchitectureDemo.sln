@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.WebApiGatew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.BlazorClient", "NorthWind.Sales.BlazorClient\NorthWind.Sales.BlazorClient.csproj", "{98DAC0EA-2959-453D-8D9E-07C44149552C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.Validalitor", "NorthWind.Sales.Validalitor\NorthWind.Sales.Validalitor.csproj", "{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{98DAC0EA-2959-453D-8D9E-07C44149552C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DAC0EA-2959-453D-8D9E-07C44149552C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DAC0EA-2959-453D-8D9E-07C44149552C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{E9E0B914-59D4-4D9D-B14E-EA15154D7BD0} = {676F8DB3-4A22-4E9B-9F68-A079E2956659}
 		{8248D686-298A-4EE1-AE00-D4A411C820EE} = {6F113A3D-8605-416F-9E76-BC593FC72313}
 		{98DAC0EA-2959-453D-8D9E-07C44149552C} = {676F8DB3-4A22-4E9B-9F68-A079E2956659}
+		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7} = {7AB00ADD-D572-430E-A245-772FB78F3E78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D768F962-2FE8-4B9B-AB86-80B258BAE178}
