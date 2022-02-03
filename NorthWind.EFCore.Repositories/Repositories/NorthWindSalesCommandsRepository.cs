@@ -24,6 +24,22 @@ public class NorthWindSalesCommandsRepository : INorthWindSalesCommandsRepposito
         }
     }
 
+    public decimal? GetCurrentBalance(string customerId)
+    {
+        var result = Context.Customers
+            .Where(c=>c.Id == customerId)
+            .Select(c=>c.CurrentBalance)
+            .ToList();
+        return result.Any() ? result[0] : null;
+    }
+
+    public Dictionary<int, int> GetUnitsInStockOf(List<int> productsIds)
+    {
+        return Context.Products
+            .Where(p=> productsIds.Contains(p.Id))
+            .ToDictionary(p=> p.Id, p=> p.UnitsInStock);
+    }
+
     public async ValueTask SaveChanges() =>
         await Context.SaveChangesAsync();
 }

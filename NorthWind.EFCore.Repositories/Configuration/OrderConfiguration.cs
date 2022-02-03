@@ -1,8 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿namespace NorthWind.EFCore.Repositories.Configuration;
 
-namespace NorthWind.EFCore.Repositories.Configuration;
-
-public class OrderConfiguration : IEntityTypeConfiguration<Order>
+internal class OrderConfiguration : IEntityTypeConfiguration<Order>
 {
     public void Configure(EntityTypeBuilder<Order> builder)
     {
@@ -23,5 +21,10 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
 
         builder.Property(o => o.ShipPostalCode)
             .HasMaxLength(10);
+
+        //relationship definition
+        builder.HasOne<Customer>()
+            .WithMany()
+            .HasForeignKey(o => o.CustomerId);
     }
 }

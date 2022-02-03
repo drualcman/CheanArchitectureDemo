@@ -5,3 +5,4 @@ global using NorthWind.Sales.BusinessObjects.Interfaces.Repositories;
 global using NorthWind.Sales.UseCases.CreateOrder;
 global using Microsoft.Extensions.DependencyInjection;
 global using NorthWind.Entities.Interfaces;
+global using System.Text;

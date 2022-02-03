@@ -50,3 +50,8 @@ Validacion
 	- El codigo postal es opcional y debe tener una longitud maxima de 10 caracteres.
 	- Debe especificarse al menos un producto en la orden.
 	- De cada producto especificado enla order, sera requerido el id del producto, la cantidad y el precio.
+	******************** validaciones adicionales nuevo requerimientos **************************************************
+	- El identificador del cliente debe de existir en la base de datos.
+	- El cliente no debe tener adeudos para que se pueda crear la orden de compra
+	- El identificador de producto debe de existir en la base de datos
+	- La cantidad en existencia del producto solicitado debe ser mayor o igual a la cantidad solicitada del producto.
