@@ -55,3 +55,21 @@ Validacion
 	- El cliente no debe tener adeudos para que se pueda crear la orden de compra
 	- El identificador de producto debe de existir en la base de datos
 	- La cantidad en existencia del producto solicitado debe ser mayor o igual a la cantidad solicitada del producto.
+
+## Ejercicio
+Crear (agregar) la aplicacion NorthWind.Inventory para implementar
+
+Caso de uso "Agregar nuevo Producto"
+
+1. El usuario realiza una peticion de creacion de nuevo producto enviando los datos de entrada.
+2. El sistema valida los datos de entrada.
+3. El sistema registra el producto.
+4. El sistema devuelve al usuario el id del producto creado.
+
+Datos de entrada
+	- Name (menor de 40 caractered y requerido)
+	- UnitsInStock (Mayor o igual a cero)
+	- UnitPrice (Payor que cero)
+
+Consideraciones
+	- De manera predeterminada un producto no esta discontinuado.
