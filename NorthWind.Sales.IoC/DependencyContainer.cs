@@ -1,5 +1,4 @@
-﻿
-namespace NorthWind.Sales.IoC;
+﻿namespace NorthWind.Sales.IoC;
 
 public static class DependencyContainer
 {
@@ -10,6 +9,7 @@ public static class DependencyContainer
         services.AddPresenters();
         services.AddNorthWindSalesControllers();
         services.AddValidators();
+        services.AddEntitiesServices();
         return services;
     }
 }
