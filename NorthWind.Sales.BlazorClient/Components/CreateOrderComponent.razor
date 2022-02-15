@@ -1,9 +1,12 @@
 ﻿<EditForm Model=Order OnValidSubmit=Send>
+	<SimpleValidator />
+	<ValidationSummary />
 	<div class="form-group">
 		<label for="customerId">Id del cliente</label>
 		<InputText class="form-control" id="customerId"
 				   placeholder="Id del cliente"
 				   @bind-Value="Order.CustomerId" />
+		<ValidationMessage For="()=> Order.CustomerId" />
 	</div>
 
 	<div class="form-group">
@@ -11,6 +14,7 @@
 		<InputText class="form-control" id="shipAddress"
 				   placeholder="Dirección"
 				   @bind-Value="Order.ShipAddress" />
+		<ValidationMessage For="()=> Order.ShipAddress" />
 	</div>
 
 	<div class="form-group">
@@ -18,6 +22,7 @@
 		<InputText class="form-control" id="shipCity"
 				   placeholder="Ciudad"
 				   @bind-Value="Order.ShipCity" />
+		<ValidationMessage For="()=> Order.ShipCity" />
 	</div>
 
 	<div class="form-group">
@@ -25,6 +30,7 @@
 		<InputText class="form-control" id="shipCountry"
 				   placeholder="País"
 				   @bind-Value="Order.ShipCountry" />
+		<ValidationMessage For="()=> Order.ShipCountry" />
 	</div>
 
 	<div class="form-group">
@@ -32,6 +38,7 @@
 		<InputText class="form-control" id="shipPostalCode"
 				   placeholder="Código Postal"
 				   @bind-Value="Order.ShipPostalCode" />
+		<ValidationMessage For="()=> Order.ShipPostalCode" />
 	</div>
 
 	<hr />
@@ -55,18 +62,21 @@
 				<InputNumber class="form-control"
 						 placeholder="Id de Producto"
 						 @bind-Value="Item.ProductId" />
+				<ValidationMessage For="()=> Item.ProductId" />
 			</div>
 
 			<div class="col">
 				<InputNumber class="form-control"
 						 placeholder="Precio"
 						 @bind-Value="Item.UnitPrice" />
+				<ValidationMessage For="()=> Item.UnitPrice" />
 			</div>
 
 			<div class="col">
 				<InputNumber class="form-control"
 						 placeholder="Cantidad"
 						 @bind-Value="Item.Quantity" />
+				<ValidationMessage For="()=> Item.Quantity" />
 			</div>
 		</div>
 	}

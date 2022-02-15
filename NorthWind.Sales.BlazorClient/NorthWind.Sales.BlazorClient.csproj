@@ -13,7 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NorthWind.Sales.Validalitor\NorthWind.Sales.Validalitor.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.WebApiGateway\NorthWind.Sales.WebApiGateway.csproj" />
+    <ProjectReference Include="..\NorthWindBlazorTools\NorthWind.BlazorTools.csproj" />
   </ItemGroup>
 
 </Project>
