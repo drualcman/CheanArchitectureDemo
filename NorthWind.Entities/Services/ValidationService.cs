@@ -23,10 +23,10 @@ public class ValidationService<T>
                 continueValidation = !stopOnFirstValidatorError;
             }
         }
-        if (failures.Count > 0)
+
+        if (failures.Any())
         {
-            string error = string.Join(" ", failures.Select(e => $"{e.Key}: {e.Value}").ToArray());
-            throw new Exception($"Error de validacionL {error}");
+            throw new ValidationException("Error de validacion", failures);
         }
     }
 }

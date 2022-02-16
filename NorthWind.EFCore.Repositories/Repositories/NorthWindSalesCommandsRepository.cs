@@ -40,6 +40,20 @@ public class NorthWindSalesCommandsRepository : INorthWindSalesCommandsRepposito
             .ToDictionary(p=> p.Id, p=> p.UnitsInStock);
     }
 
-    public async ValueTask SaveChanges() =>
-        await Context.SaveChangesAsync();
+    public async ValueTask SaveChanges()
+    {
+        try
+        {
+            await Context.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+            throw new UpdateException(ex.InnerException?.Message ?? ex.Message, 
+                ex.Entries.Select(e=> e.Entity.GetType().Name).ToList());
+        }
+        catch (Exception ex)
+        {
+            throw new GeneralException(ex.Message, ex);
+        }
+    }
 }

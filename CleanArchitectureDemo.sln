@@ -53,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D71EF77
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.BlazorTools", "NorthWindBlazorTools\NorthWind.BlazorTools.csproj", "{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.ExceptionHandlers", "NorthWind.ExceptionHandlers\NorthWind.ExceptionHandlers.csproj", "{920A2162-EA83-4C92-80C8-856B0842D6A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{920A2162-EA83-4C92-80C8-856B0842D6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920A2162-EA83-4C92-80C8-856B0842D6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920A2162-EA83-4C92-80C8-856B0842D6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920A2162-EA83-4C92-80C8-856B0842D6A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +142,7 @@ Global
 		{BD5F6CD7-3B3F-4350-B9C9-E1DB2CB88DD7} = {7AB00ADD-D572-430E-A245-772FB78F3E78}
 		{9D71EF77-AC93-4B2F-B029-2F4190CFE20D} = {8C576F45-0EAE-491F-A399-A2A3BB7101EC}
 		{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096} = {9D71EF77-AC93-4B2F-B029-2F4190CFE20D}
+		{920A2162-EA83-4C92-80C8-856B0842D6A1} = {0A5F5CA3-B589-42C1-BBC6-75AD0A0E1CF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D768F962-2FE8-4B9B-AB86-80B258BAE178}
