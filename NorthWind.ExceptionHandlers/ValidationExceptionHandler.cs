@@ -7,7 +7,7 @@ public class ValidationExceptionHandler : IExceptionHandler<ValidationException>
         {
             Status = StatusCodes.Status400BadRequest,
             Type = StatusCodes.Status400BadRequestType,
-            Title = "Error  en los datos de entrada.",
+            Title = "Error en los datos de entrada.",
             Detail = "Se eonctraron uno o mas errores de validacion de datos.",
             InvalidParams = exception.Failures
         });

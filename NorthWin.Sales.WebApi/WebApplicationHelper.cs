@@ -22,6 +22,10 @@
 
         public static WebApplication ConfigureWebApplication(this WebApplication app)
         {
+            
+            app.UseExceptionHandler(builder => 
+                builder.UseWebExceptionHandlerMiddleware(app.Environment,
+                                                         app.Services.GetService<IWebExceptionHandler>()));
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -29,7 +33,6 @@
             }
 
             app.UseNorthWindSalesEndPoints();
-
             app.UseCors();
 
             return app;

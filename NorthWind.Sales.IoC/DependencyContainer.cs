@@ -10,6 +10,7 @@ public static class DependencyContainer
         services.AddNorthWindSalesControllers();
         services.AddValidators();
         services.AddEntitiesServices();
+        services.AddWebExceptionHandler();
         return services;
     }
 }
