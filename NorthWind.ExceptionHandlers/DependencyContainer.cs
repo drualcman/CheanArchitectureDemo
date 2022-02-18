@@ -20,9 +20,9 @@
             return app;
         }
 
-        public static WebApplication UseExceptionHandlerMiddleware(this WebApplication app)
-        {
-            return app;
-        }
+        //public static WebApplication UseExceptionHandlerMiddleware(this WebApplication app)
+        //{
+        //    return app;
+        //}
     }
 }

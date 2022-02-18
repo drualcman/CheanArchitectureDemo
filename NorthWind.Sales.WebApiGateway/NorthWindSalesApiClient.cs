@@ -18,6 +18,11 @@ public class NorthWindSalesApiClient
         {
             orderId = await response.Content.ReadFromJsonAsync<int>();
         }
+        else
+        {
+            var jsonResponse = await response.Content.ReadFromJsonAsync<JsonElement>();
+            throw new ProblemDetailsException(jsonResponse);
+        }
         return orderId;
     }
 }

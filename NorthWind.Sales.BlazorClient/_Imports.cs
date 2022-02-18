@@ -6,3 +6,4 @@ global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using NorthWind.Entities.Interfaces;
 global using NorthWind.Sales.BlazorClient;
 global using NorthWind.Sales.Validalitor.CreateOrder;
+global using NorthWind.Entities.Exceptions;

@@ -2,6 +2,25 @@
     <div>
         @Exception.Message
     </div>
+    @if (Exception is ProblemDetailsException ex)
+    {
+        <div>
+            @ex.ProblemDetails.Detail
+        </div>
+        @if(ex.ProblemDetails.InvalidParams != null)
+        {
+            foreach (var failure in ex.ProblemDetails.InvalidParams)
+            {
+                <div>@failure.Key:</div>
+                <ul>
+                @foreach (var message in failure.Value)
+                {
+                <li>@message</li>                    
+                }
+                </ul>
+            }
+        }
+    }
 </div>
 
 @code{
