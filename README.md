@@ -73,3 +73,13 @@ Datos de entrada
 
 Consideraciones
 	- De manera predeterminada un producto no esta discontinuado.
+
+
+### Tercer entrenamiendo. Eventos de dominio
+
+Flujo Primario
+	1. El usuario envia la solicitud "Crear order de compra" con los datos de entrada.
+	2. El sistema valida los datos
+	3. EL sistema registra la orden de compra.
+	4. Cuando el nnumero de productos de la ordern sea mayor que 3, el sistema enviara un correo electronico de notificacion de "Orden especial creada" al administrador de la empresa
+	5. El sistema confirma al usuario que su solicitud ha sido procesada notificandole el numero de la orden creada.

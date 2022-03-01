@@ -11,6 +11,8 @@ public static class DependencyContainer
         services.AddValidators();
         services.AddEntitiesServices();
         services.AddWebExceptionHandler();
+        services.AddEventHandlers();
+        services.AddMailService();
         return services;
     }
 }

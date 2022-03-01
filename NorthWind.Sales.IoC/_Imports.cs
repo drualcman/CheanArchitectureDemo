@@ -7,3 +7,5 @@ global using Microsoft.Extensions.Configuration;
 global using NorthWind.Sales.Validalitor;
 global using NorthWind.Entities;
 global using NorthWind.ExceptionHandlers;
+global using NorthWind.Sales.BusinessObjects;
+global using NorthWind.Mail;

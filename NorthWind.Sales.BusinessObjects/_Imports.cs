@@ -5,3 +5,7 @@ global using NorthWind.Sales.BusinessObjects.POCOEntities;
 global using NorthWind.Sales.BusinessObjects.ValueObjects;
 global using NorthWind.Entities.Interfaces;
 global using NorthWind.Sales.BusinessObjects.Aggregates;
+global using NorthWind.Entities.Interfaces.Events;
+global using Microsoft.Extensions.DependencyInjection;
+global using NorthWind.Sales.BusinessObjects.Events;
+

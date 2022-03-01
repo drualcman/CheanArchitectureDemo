@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NorthWind.EFCore.Repositories\NorthWind.EFCore.Repositories.csproj" />
     <ProjectReference Include="..\NorthWind.ExceptionHandlers\NorthWind.ExceptionHandlers.csproj" />
+    <ProjectReference Include="..\NorthWind.Mail\NorthWind.Mail.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.Controllers\NorthWind.Sales.Controllers.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.Presenters\NorthWind.Sales.Presenters.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.UseCases\NorthWind.Sales.UseCases.csproj" />
