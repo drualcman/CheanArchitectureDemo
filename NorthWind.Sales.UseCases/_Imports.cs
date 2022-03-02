@@ -7,3 +7,5 @@ global using Microsoft.Extensions.DependencyInjection;
 global using NorthWind.Entities.Interfaces;
 global using System.Text;
 global using NorthWind.Entities.Services;
+global using NorthWind.Entities.Interfaces.Events;
+global using NorthWind.Sales.BusinessObjects.Events;
