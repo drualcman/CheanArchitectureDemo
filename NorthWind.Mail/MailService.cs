@@ -35,7 +35,7 @@ public class MailService : IMailService
         catch (Exception ex)
         {
             //notificar no se pudo enviar el correo
-            Trace.WriteLine(ex.Message);
+            ApplicationStatusLoggerService.Log(new ApplicationStatusLog(LogLevel.Information, ex.Message));
         }
     }
 }

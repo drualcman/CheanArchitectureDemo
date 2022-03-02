@@ -22,7 +22,7 @@
 
         public static WebApplication ConfigureWebApplication(this WebApplication app)
         {
-            
+            ApplicationStatusLoggerService.SetLogger(app.Services.GetService<ILogger<ApplicationStatusLoggerService>>());
             app.UseExceptionHandler(builder => 
                 builder.UseWebExceptionHandlerMiddleware(app.Environment,
                                                          app.Services.GetService<IWebExceptionHandler>()));

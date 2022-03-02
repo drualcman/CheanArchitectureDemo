@@ -57,8 +57,8 @@ public class WebExceptionHandler : IWebExceptionHandler
                 Title = title,
                 Detail = detail
             };
+            ApplicationStatusLoggerService.Log(new ApplicationStatusLog(LogLevel.Error, ex.ToString()));
         }
-
         return problem;
     }
 }

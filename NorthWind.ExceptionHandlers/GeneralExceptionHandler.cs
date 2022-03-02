@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace NorthWind.ExceptionHandlers;
 
-namespace NorthWind.ExceptionHandlers
+public class GeneralExceptionHandler : IExceptionHandler<GeneralException>
 {
-    public class GeneralExceptionHandler : IExceptionHandler<GeneralException>
+    public ValueTask<ProblemDetails> Handle(GeneralException exception)
     {
-        public ValueTask<ProblemDetails> Handle(GeneralException exception) =>
-        ValueTask.FromResult(new ProblemDetails
+        ApplicationStatusLoggerService.Log(new ApplicationStatusLog(LogLevel.Error, exception.Detail));
+        return ValueTask.FromResult(new ProblemDetails
         {
             Status = StatusCodes.Status400BadRequest,
             Type = StatusCodes.Status500InternalServerErrorType,

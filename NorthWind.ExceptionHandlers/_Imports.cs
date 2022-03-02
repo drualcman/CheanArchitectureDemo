@@ -8,6 +8,8 @@ global using System.Text.Json;
 global using Microsoft.AspNetCore.Builder;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
+global using NorthWind.Entities.Services;
+global using Microsoft.Extensions.Logging;
 
 
 

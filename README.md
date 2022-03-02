@@ -83,3 +83,20 @@ Flujo Primario
 	3. EL sistema registra la orden de compra.
 	4. Cuando el nnumero de productos de la ordern sea mayor que 3, el sistema enviara un correo electronico de notificacion de "Orden especial creada" al administrador de la empresa
 	5. El sistema confirma al usuario que su solicitud ha sido procesada notificandole el numero de la orden creada.
+
+
+### Cuarto entrenamiendo. Logs de aplicacion y dominio
+
+Flujo Primario
+	1. El usuario envia la solicitud "Crear order de compra" con los datos de entrada.
+	2. El sistema valida los datos
+	3. El sistema registra la accion "Inicio de creacion de ordend e compra" con fines de auditoria log dominio
+	4. EL sistema registra la orden de compra.
+	5. El sistems registra la accion "Orden de compra <numero de orden> creada" con fines de auditoria log dominio
+	6. Cuando el nnumero de productos de la ordern sea mayor que 3, el sistema enviara un correo electronico de notificacion de "Orden especial creada" al administrador de la empresa
+	7. El sistema confirma al usuario que su solicitud ha sido procesada notificandole el numero de la orden creada.
+
+Flujo alterno (Error de en el funcionamiento de la aplicacion)
+	1. El procesamiento de la solicitud es cancelado
+	2. El sistema registra el error encontrado con fines de diagnostico
+	3. El sistema muestra el error al usuario
