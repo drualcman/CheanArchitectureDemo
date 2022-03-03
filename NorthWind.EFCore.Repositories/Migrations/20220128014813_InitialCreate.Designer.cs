@@ -11,7 +11,7 @@ using NorthWind.EFCore.Repositories.DataContexts;
 
 namespace NorthWind.EFCore.Repositories.Migrations
 {
-    [DbContext(typeof(NorthdWindContext))]
+    [DbContext(typeof(NorthWindContext))]
     [Migration("20220128014813_InitialCreate")]
     partial class InitialCreate
     {

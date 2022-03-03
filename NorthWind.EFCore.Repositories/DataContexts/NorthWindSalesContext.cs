@@ -2,9 +2,9 @@
 
 namespace NorthWind.EFCore.Repositories.DataContexts;
 
-public class NorthdWindSalesContext : DbContext
+public class NorthWindSalesContext : DbContext
 {
-    public NorthdWindSalesContext(DbContextOptions<NorthdWindSalesContext> options) : base(options) { }
+    public NorthWindSalesContext(DbContextOptions<NorthWindSalesContext> options) : base(options) { }
 
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderDetail> OrderDetails { get; set; }

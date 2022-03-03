@@ -10,7 +10,7 @@ using NorthWind.EFCore.Repositories.DataContexts;
 
 namespace NorthWind.EFCore.Repositories.Migrations
 {
-    [DbContext(typeof(NorthdWindContext))]
+    [DbContext(typeof(NorthWindContext))]
     partial class NorthdWindContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -61,6 +61,25 @@ namespace NorthWind.EFCore.Repositories.Migrations
                             CurrentBalance = 100m,
                             Name = "Antonio Moreno Taqueria"
                         });
+                });
+
+            modelBuilder.Entity("NorthWind.EFCore.Repositories.Entities.DomainLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DomainLogs");
                 });
 
             modelBuilder.Entity("NorthWind.EFCore.Repositories.Entities.OrderDetail", b =>

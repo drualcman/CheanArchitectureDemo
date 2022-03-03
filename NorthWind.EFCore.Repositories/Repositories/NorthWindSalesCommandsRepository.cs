@@ -2,9 +2,9 @@
 
 public class NorthWindSalesCommandsRepository : INorthWindSalesCommandsReppository
 {
-    readonly NorthdWindSalesContext Context;
+    readonly NorthWindSalesContext Context;
 
-    public NorthWindSalesCommandsRepository(NorthdWindSalesContext context)
+    public NorthWindSalesCommandsRepository(NorthWindSalesContext context)
     {
         Context = context;
     }

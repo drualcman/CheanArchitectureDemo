@@ -6,7 +6,7 @@ namespace NorthWind.EFCore.Repositories.DataContexts;
 /// Add-Migration InitialCreate -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -c NorthdWindContext
 /// Update-Database -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -context NorthdWindContext
 /// </summary>
-internal class NorthdWindContext : DbContext
+internal class NorthWindContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -17,6 +17,7 @@ internal class NorthdWindContext : DbContext
     public DbSet<OrderDetail> OrderDetails { get; set; }
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Product> Products { get; set; }
+    public DbSet<DomainLog> DomainLogs { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

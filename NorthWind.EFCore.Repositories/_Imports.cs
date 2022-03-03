@@ -9,3 +9,4 @@ global using Microsoft.Extensions.DependencyInjection;
 global using NorthWind.EFCore.Repositories.Repositories;
 global using Microsoft.Extensions.Configuration;
 global using NorthWind.Entities.Exceptions;
+global using NorthWind.Entities.Interfaces;
