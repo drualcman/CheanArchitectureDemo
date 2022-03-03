@@ -36,6 +36,7 @@ public class MailService : IMailService
         {
             //notificar no se pudo enviar el correo
             ApplicationStatusLoggerService.Log(new ApplicationStatusLog(LogLevel.Information, ex.Message));
+            throw;
         }
     }
 }

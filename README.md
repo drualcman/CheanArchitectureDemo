@@ -38,7 +38,7 @@ Flujo Primario
 	3. EL sistema registra la orden de compra.
 	4. El sistema confirma al usuario que su solicitud ha sido procesada notificandole el numero de la orden creada.
 
-Flujo alterno (Error de validacion)
+Flujo alterno: Error de validacion
 	1. El procesamiento de la solicitud es cancelado.
 	2. El sistema muestra el error al usuario.
 
@@ -96,7 +96,16 @@ Flujo Primario
 	6. Cuando el nnumero de productos de la ordern sea mayor que 3, el sistema enviara un correo electronico de notificacion de "Orden especial creada" al administrador de la empresa
 	7. El sistema confirma al usuario que su solicitud ha sido procesada notificandole el numero de la orden creada.
 
-Flujo alterno (Error de en el funcionamiento de la aplicacion)
+Flujo alterno: Error de en el funcionamiento de la aplicacion
 	1. El procesamiento de la solicitud es cancelado
 	2. El sistema registra el error encontrado con fines de diagnostico
 	3. El sistema muestra el error al usuario
+
+
+
+### Quinto entrenamiento. Manejo de transactiones entre repositorios
+
+Flujo alterno: Error al crear la order
+	1. El procesamiento de la solicitud es cancelado
+	2. El sistema registra la accion "Creacion de orden cancelada" indicando de ser posible, el identificadod ela orde que haya sido cancelada.
+	3. El sistema muestra el error al usuario.
