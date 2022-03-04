@@ -40,7 +40,7 @@ public class CreateOrderInteractor : ICreateOrderInputPort
             await LogCommandsRepository.SaveChanges();
             await OutputPort.Handle(orderAggregate.Id);
 
-            if (orderAggregate.OrderDetails.Count > 3)
+            if (new SpecialOrderSpecification().IsSatisfiedBy(orderAggregate))
             {
                 await DomainEventHub.Raise(new SpecialOrderCreatedEvent(orderAggregate.Id, orderAggregate.OrderDetails.Count));
             }
