@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.BlazorTools", "No
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.ExceptionHandlers", "NorthWind.ExceptionHandlers\NorthWind.ExceptionHandlers.csproj", "{920A2162-EA83-4C92-80C8-856B0842D6A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Mail", "NorthWind.Mail\NorthWind.Mail.csproj", "{8EEE978F-511D-4D7F-B102-9389A0A92F31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Mail", "NorthWind.Mail\NorthWind.Mail.csproj", "{8EEE978F-511D-4D7F-B102-9389A0A92F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWin.WebTools", "NorthWin.WebTools\NorthWin.WebTools.csproj", "{F3D3EAFE-861F-4E0D-8606-5785AE144480}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{8EEE978F-511D-4D7F-B102-9389A0A92F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EEE978F-511D-4D7F-B102-9389A0A92F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EEE978F-511D-4D7F-B102-9389A0A92F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D3EAFE-861F-4E0D-8606-5785AE144480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D3EAFE-861F-4E0D-8606-5785AE144480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D3EAFE-861F-4E0D-8606-5785AE144480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D3EAFE-861F-4E0D-8606-5785AE144480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +156,7 @@ Global
 		{5BA5D99B-3DB5-485F-A70E-1BFE49BE8096} = {9D71EF77-AC93-4B2F-B029-2F4190CFE20D}
 		{920A2162-EA83-4C92-80C8-856B0842D6A1} = {0A5F5CA3-B589-42C1-BBC6-75AD0A0E1CF9}
 		{8EEE978F-511D-4D7F-B102-9389A0A92F31} = {6F113A3D-8605-416F-9E76-BC593FC72313}
+		{F3D3EAFE-861F-4E0D-8606-5785AE144480} = {9D71EF77-AC93-4B2F-B029-2F4190CFE20D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D768F962-2FE8-4B9B-AB86-80B258BAE178}

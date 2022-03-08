@@ -109,3 +109,14 @@ Flujo alterno: Error al crear la order
 	1. El procesamiento de la solicitud es cancelado
 	2. El sistema registra la accion "Creacion de orden cancelada" indicando de ser posible, el identificadod ela orde que haya sido cancelada.
 	3. El sistema muestra el error al usuario.
+
+### Sexto entrenamiento. Manejo de transactiones entre repositorios
+
+Consideraciones
+	- Solo usuario authenticados pueden crear ordenes.
+	- Al crear una orden debera registrar el usuario que crea la orden.
+	- Si hay usuario authenticado, cancelar el proceso e informar al usuario.
+
+Flujo alterno: El usuario no esta autenticado
+	1. El procesamiento de la solicitud es cancelado.
+	2. El sistema muestra el error al usuario.

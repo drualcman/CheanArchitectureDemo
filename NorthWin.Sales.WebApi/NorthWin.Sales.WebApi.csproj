@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NorthWin.WebTools\NorthWin.WebTools.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.IoC\NorthWind.Sales.IoC.csproj" />
   </ItemGroup>
 

@@ -10,3 +10,4 @@ global using NorthWind.Entities.Interfaces.Events;
 global using NorthWind.Sales.BusinessObjects.Events;
 global using NorthWind.Entities.ValueObject;
 global using NorthWind.Sales.BusinessObjects.Specifications;
+global using NorthWind.Entities.Guards;
