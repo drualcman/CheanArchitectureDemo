@@ -9,7 +9,10 @@ public class UserService : IUserService
         Context = context;
     }
 
-    public bool IsAuthenticaticed => Context.HttpContext.User.Identity.IsAuthenticated;
+    //public bool IsAuthenticaticed => Context.HttpContext.User.Identity.IsAuthenticated;
 
-    public string UserName => Context.HttpContext.User.Identity?.Name;
+    //public string UserName => Context.HttpContext.User.Identity?.Name;      
+    public bool IsAuthenticaticed => true;
+
+    public string UserName => "user@northwind.com";
 }

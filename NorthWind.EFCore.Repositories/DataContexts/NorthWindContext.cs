@@ -3,8 +3,8 @@
 namespace NorthWind.EFCore.Repositories.DataContexts;
 
 /// <summary>
-/// Add-Migration InitialCreate -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -c NorthdWindContext
-/// Update-Database -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -context NorthdWindContext
+/// Add-Migration InitialCreate -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -c NorthWindContext
+/// Update-Database -p NorthWind.EFCore.Repositories -s NorthWind.EFCore.Repositories -context NorthWindContext
 /// </summary>
 internal class NorthWindContext : DbContext
 {

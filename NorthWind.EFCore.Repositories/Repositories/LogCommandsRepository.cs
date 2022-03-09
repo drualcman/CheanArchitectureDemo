@@ -14,7 +14,8 @@ public class LogCommandsRepository : ILogCommandsRepository
         Context.Add(new DomainLog
         {
             CreatedDate = log.CreatedDate,
-            Description = log.Description
+            Description = log.Description,
+            UserName = log.UserName
         });
     }
 
