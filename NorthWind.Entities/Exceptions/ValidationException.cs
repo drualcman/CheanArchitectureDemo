@@ -34,5 +34,11 @@ namespace NorthWind.Entities.Exceptions
                 }
             }
         }
+
+        public ValidationException(string message, List<string> failuresMessages) : base(message) =>
+            Failures = new()
+            {
+                ["Error"] = failuresMessages
+            };
     }
 }

@@ -9,3 +9,6 @@ global using NorthWind.Entities;
 global using NorthWind.ExceptionHandlers;
 global using NorthWind.Sales.BusinessObjects;
 global using NorthWind.Mail;
+global using NorthWind.UserManager.Controllers;
+global using NorthWind.UserManager.UseCases;
+global using NorthWind.UserManager.AspNetIdentity;

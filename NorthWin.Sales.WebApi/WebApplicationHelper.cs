@@ -6,7 +6,7 @@ public static class WebApplicationHelper
     {
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        builder.Services.AddNorthWindSalesServices(builder.Configuration, "NothWindDb");
+        builder.Services.AddNorthWindSalesServices(builder.Configuration, "NothWindDb", "NotthWinDbUsers");
         builder.Services.AddCors(options => 
         {
             options.AddDefaultPolicy(config => 

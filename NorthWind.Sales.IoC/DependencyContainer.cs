@@ -2,7 +2,8 @@
 
 public static class DependencyContainer
 {
-    public static IServiceCollection AddNorthWindSalesServices (this IServiceCollection services, IConfiguration configuration, string connectionStringName)
+    public static IServiceCollection AddNorthWindSalesServices (this IServiceCollection services, IConfiguration configuration, 
+        string connectionStringName, string userManagerConnectionStringName)
     {
         services.AddRepositories(configuration, connectionStringName);
         services.AddUseCasesServices();
@@ -13,6 +14,9 @@ public static class DependencyContainer
         services.AddWebExceptionHandler();
         services.AddEventHandlers();
         services.AddMailService();
+        services.AddNorthWindUserManagerControllers();
+        services.AddNorthWindUserManagerUseCasesServices();
+        services.AddNothWindUserManager(configuration, userManagerConnectionStringName);
         return services;
     }
 }

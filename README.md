@@ -120,3 +120,19 @@ Consideraciones
 Flujo alterno: El usuario no esta autenticado
 	1. El procesamiento de la solicitud es cancelado.
 	2. El sistema muestra el error al usuario.
+
+# Caso de uso registar usuario
+El sistema debera permitir el registro de datos del usuario
+
+Datos:
+	- Correo
+	- Clave de acceso
+
+Flujo primario
+	1. El usuario envia los datos.
+	2. El sistema crea el usuario.
+	3. El sistema confirma al usuario el registro de la informacion.
+
+Flujo alterno: error al crear los datos.
+	1. El proceso es cancelado.
+	2. El sistema indica el error al usuario.
