@@ -16,6 +16,7 @@
     <ProjectReference Include="..\NorthWind.Sales.Validalitor\NorthWind.Sales.Validalitor.csproj" />
     <ProjectReference Include="..\NorthWind.UserManager.AspNetIdentity\NorthWind.UserManager.AspNetIdentity.csproj" />
     <ProjectReference Include="..\NorthWind.UserManager.Controllers\NorthWind.UserManager.Controllers.csproj" />
+    <ProjectReference Include="..\NorthWind.UserManager.Presenter\NorthWind.UserManager.Presenter.csproj" />
     <ProjectReference Include="..\NorthWind.UserManager.UseCases\NorthWind.UserManager.UseCases.csproj" />
   </ItemGroup>
 

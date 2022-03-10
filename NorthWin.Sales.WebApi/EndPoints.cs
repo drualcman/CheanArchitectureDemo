@@ -12,6 +12,7 @@ public static class EndPoints
             await controller.Register(user);
             return Results.Ok();
         });
+        app.MapPost("/user/login", async (UserCredentialsDto user, ILoginController controller) => Results.Ok(await controller.Login(user)));
         return app;
     }
 }

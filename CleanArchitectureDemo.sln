@@ -59,15 +59,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Mail", "NorthWind
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWin.WebTools", "NorthWin.WebTools\NorthWin.WebTools.csproj", "{F3D3EAFE-861F-4E0D-8606-5785AE144480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UserManager.BusinessObjects", "NorthWind.UserManager.BusinessObjects\NorthWind.UserManager.BusinessObjects.csproj", "{5E9BF1E2-E89B-45F2-9F36-9C0AD4F440DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.UserManager.BusinessObjects", "NorthWind.UserManager.BusinessObjects\NorthWind.UserManager.BusinessObjects.csproj", "{5E9BF1E2-E89B-45F2-9F36-9C0AD4F440DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UserManager.Controllers", "NorthWind.UserManager.Controllers\NorthWind.UserManager.Controllers.csproj", "{6D1E5258-8683-4402-836A-76A0632FE342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.UserManager.Controllers", "NorthWind.UserManager.Controllers\NorthWind.UserManager.Controllers.csproj", "{6D1E5258-8683-4402-836A-76A0632FE342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UserManager.UseCases", "NorthWind.UserManager.UseCases\NorthWind.UserManager.UseCases.csproj", "{8F5E3383-0A33-4E53-B43C-1645709EFEB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.UserManager.UseCases", "NorthWind.UserManager.UseCases\NorthWind.UserManager.UseCases.csproj", "{8F5E3383-0A33-4E53-B43C-1645709EFEB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserManagers", "UserManagers", "{43AE2950-0F6B-4FA9-9A19-0CD70E79C14C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UserManager.AspNetIdentity", "NorthWind.UserManager.AspNetIdentity\NorthWind.UserManager.AspNetIdentity.csproj", "{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.UserManager.AspNetIdentity", "NorthWind.UserManager.AspNetIdentity\NorthWind.UserManager.AspNetIdentity.csproj", "{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UserManager.Presenter", "NorthWind.UserManager.Presenter\NorthWind.UserManager.Presenter.csproj", "{7E22E072-DA34-469A-804A-3C0846051CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +157,10 @@ Global
 		{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E22E072-DA34-469A-804A-3C0846051CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E22E072-DA34-469A-804A-3C0846051CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E22E072-DA34-469A-804A-3C0846051CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E22E072-DA34-469A-804A-3C0846051CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -188,6 +194,7 @@ Global
 		{8F5E3383-0A33-4E53-B43C-1645709EFEB6} = {7AB00ADD-D572-430E-A245-772FB78F3E78}
 		{43AE2950-0F6B-4FA9-9A19-0CD70E79C14C} = {62B797F3-7471-4A2F-9ABF-F04C2E9E2CCA}
 		{9AD4DA04-4FE1-4C48-8F1D-BB7AD54E3015} = {43AE2950-0F6B-4FA9-9A19-0CD70E79C14C}
+		{7E22E072-DA34-469A-804A-3C0846051CC7} = {0A5F5CA3-B589-42C1-BBC6-75AD0A0E1CF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D768F962-2FE8-4B9B-AB86-80B258BAE178}

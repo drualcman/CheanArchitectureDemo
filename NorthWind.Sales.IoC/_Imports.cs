@@ -12,3 +12,4 @@ global using NorthWind.Mail;
 global using NorthWind.UserManager.Controllers;
 global using NorthWind.UserManager.UseCases;
 global using NorthWind.UserManager.AspNetIdentity;
+global using NorthWind.UserManager.Presenter;

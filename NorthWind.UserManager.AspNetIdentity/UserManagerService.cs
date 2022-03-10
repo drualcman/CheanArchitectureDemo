@@ -28,4 +28,17 @@ public class UserManagerService : IUserManager
 
         return errors;
     }
+
+    public async Task<UserDto> GetUserByCredentials(UserCredentialsDto userData)
+    {
+        UserDto foundUser = default;
+
+        IdentityUser user = await UserManager.FindByNameAsync(userData.UserName);
+        if (user != null && await UserManager.CheckPasswordAsync(user, userData.Password))
+        {
+            foundUser = new UserDto(user.UserName, user.Email);
+        }
+
+        return foundUser;
+    }
 }

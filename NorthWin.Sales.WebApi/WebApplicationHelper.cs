@@ -6,7 +6,8 @@ public static class WebApplicationHelper
     {
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        builder.Services.AddNorthWindSalesServices(builder.Configuration, "NothWindDb", "NotthWinDbUsers");
+        IConfigurationSection jwtConfigurationSection = builder.Configuration.GetSection("JWT");
+        builder.Services.AddNorthWindSalesServices(builder.Configuration, "NothWindDb", "NotthWinDbUsers", jwtConfigurationSection);
         builder.Services.AddCors(options => 
         {
             options.AddDefaultPolicy(config => 

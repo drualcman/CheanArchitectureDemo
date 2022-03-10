@@ -121,10 +121,13 @@ Flujo alterno: El usuario no esta autenticado
 	1. El procesamiento de la solicitud es cancelado.
 	2. El sistema muestra el error al usuario.
 
+
+### Septimo entrenamiento. Autenticacion y autorizacion
+
 # Caso de uso registar usuario
 El sistema debera permitir el registro de datos del usuario
 
-Datos:
+Datos de entrada:
 	- Correo
 	- Clave de acceso
 
@@ -136,3 +139,23 @@ Flujo primario
 Flujo alterno: error al crear los datos.
 	1. El proceso es cancelado.
 	2. El sistema indica el error al usuario.
+
+# Caso de uso login
+El usuario proporciona sus credenciales para optener un Token.
+
+Datos de entrada:
+	- Usuario (correo)
+	- Clave de acceso
+
+Flujo primario:
+	1. El usuarioenvia los datos.
+	2. El sistema valida los datos.
+	3. El sistema devulve un token de acceso al usuario.
+
+Flujo alterno: Error de autenticacion
+	1. El sistem indica el error al usuario.
+
+{
+  "email": "string@yo.com",
+  "password": "Demo12345$"
+}

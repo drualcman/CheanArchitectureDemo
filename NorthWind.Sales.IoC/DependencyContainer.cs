@@ -3,7 +3,7 @@
 public static class DependencyContainer
 {
     public static IServiceCollection AddNorthWindSalesServices (this IServiceCollection services, IConfiguration configuration, 
-        string connectionStringName, string userManagerConnectionStringName)
+        string connectionStringName, string userManagerConnectionStringName, IConfigurationSection jwtConfiguration)
     {
         services.AddRepositories(configuration, connectionStringName);
         services.AddUseCasesServices();
@@ -17,6 +17,7 @@ public static class DependencyContainer
         services.AddNorthWindUserManagerControllers();
         services.AddNorthWindUserManagerUseCasesServices();
         services.AddNothWindUserManager(configuration, userManagerConnectionStringName);
+        services.AddNorthWindUserManagerPresenters(jwtConfiguration);
         return services;
     }
 }
